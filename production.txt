@@ -1,0 +1,7 @@
+*** Settings ***
+Resource  common-resources.txt
+*** Variables ***
+${SERVER}  http://eficode.fi
+${BROWSER}  firefox
+
+
