@@ -5,7 +5,7 @@ Library         Selenium2Library  0  implicit_wait=10    # Set explicit wait to 
 *** Keywords ***
 Open Browser And Go To Production
 	Open Browser  ${SERVER}  ${BROWSER}
-	Maximize Browser Window
+	#Maximize Browser Window
 
 Open frontpage
  	Go To  ${SERVER}
