@@ -13,3 +13,8 @@ Blog should exists
     Click Link  Automatic testing with Robot Framework pt. 3: Setting up a continuous integration system
     Title Should Be  Eficode | Automatic testing with Robot Framework pt. 3: Setting up a continuous integration system
     Location Should Be  ${SERVER}/blogi/setting-up-a-ci-system/
+
+Helsinki link should be on frontpage and work
+    Page Should Contain Link  Seuraa Twitterissä
+    Click Link  Helsinki
+    Location Should Be  ${SERVER}/yhteystiedot/
