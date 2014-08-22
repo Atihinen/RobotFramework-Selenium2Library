@@ -1,3 +1,6 @@
+#Robot
 *.xml
 *.html
 *.png
+#OSX
+.DS_Store
