@@ -18,3 +18,10 @@ Helsinki link should be on frontpage and work
     Page Should Contain Link  Seuraa Twitterissä
     Click Link  Helsinki
     Location Should Be  ${SERVER}/yhteystiedot/
+
+Changing language should change website language
+    Click Link  English
+    Location Should Be  ${SERVER}/en/
+    Click Link  简体中文
+    Location Should Be  ${SERVER}/zh-hans/
+
