@@ -9,4 +9,4 @@ Install pip
 
 Run following command after cloning this repository `pip install -r requirements.txt`
 
-Run the test case in terminal `pybot --variable ENVIRONMENT:production find-blog.robot`
+Run the test case in terminal `pybot --variable ENVIRONMENT:production smoke.robot`
