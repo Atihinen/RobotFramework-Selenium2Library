@@ -29,22 +29,22 @@ Verify urls are valid
 *** Test Cases ***
 
 Blog should exists
-    Go To  ${SERVER}/blogi/
-    Title Should Be  Eficode | Blogi
-    Click Link  Automatic testing with Robot Framework pt. 3: Setting up a continuous integration system
-    Title Should Be  Eficode | Automatic testing with Robot Framework pt. 3: Setting up a continuous integration system
-    Location Should Be  ${SERVER}/blogi/setting-up-a-ci-system/
+    Go To    ${SERVER}/blogi/
+    Title Should Be    Eficode | Blogi
+    Click Link    Automatic testing with Robot Framework pt. 3: Setting up a continuous integration system
+    Title Should Be    Eficode | Automatic testing with Robot Framework pt. 3: Setting up a continuous integration system
+    Location Should Be    ${SERVER}/blogi/setting-up-a-ci-system/
 
 Helsinki link should be on frontpage and work
-    Page Should Contain Link  Seuraa Twitterissä
-    Click Link  Helsinki
-    Location Should Be  ${SERVER}/yhteystiedot/
+    Page Should Contain Link    Seuraa Twitterissä
+    Click Link    Helsinki
+    Location Should Be    ${SERVER}/yhteystiedot/
 
 Changing language should change website language
-    Click Link  ${english_link}
-    Location Should Be  ${SERVER}/en/
-    Click Link  ${chinese_link}
-    Location Should Be  ${SERVER}/zh-hans/
+    Click Link    ${english_link}
+    Location Should Be    ${SERVER}/en/
+    Click Link    ${chinese_link}
+    Location Should Be    ${SERVER}/zh-hans/
 
 Software pages should be reachable
     @{valid_pages}=    Get urls for software pages
