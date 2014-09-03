@@ -25,3 +25,7 @@ Changing language should change website language
     Click Link  简体中文
     Location Should Be  ${SERVER}/zh-hans/
 
+Software pages should be reachable
+    :FOR  ${site}  IN  @{VALID_URLS}
+    \   Navigate And Check Location  ${site[0]}  ${site[1]}
+
