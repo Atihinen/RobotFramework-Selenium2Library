@@ -14,10 +14,15 @@ Open Browser And Go To Frontpage
 Open frontpage
     Go To  ${SERVER}
 
-Navigate And Check Location
+Navigate And Verify Location
     [Arguments]    ${url}    ${title}
     Go To    ${url}
     Location Should Be    ${url}
     Title Should Be    ${title}
+
+Navigate By Link And Verify Location
+    [Arguments]    ${link_text}    ${link_location}
+    Click Link    ${link_text}
+    Location Should Be    ${link_location}
 
 
