@@ -14,7 +14,7 @@ ${robot_blog_url}=    ${SERVER}/blogi/setting-up-a-ci-system/
 
 *** Test Cases ***
 
-Blog about robotframework should exists
+Blog about robotframework should exist
     Choose Blog And Verify    ${robot_blog_name}    ${robot_blog_url}
 
 Helsinki link should be on frontpage and work
