@@ -6,23 +6,19 @@ Library         Collections
 *** Variables ***
 
 *** Keywords ***
-Open Browser And Go To Frontpage
+Open Default Browser
     Open Browser    ${SERVER}    ${BROWSER}
     Select Window    title=Eficode | Eficode: Excellence in software development
     Maximize Browser Window
 
-Open frontpage
+
+
+Navigate To Frontpage
     Go To  ${SERVER}
 
-Navigate And Verify Location
-    [Arguments]    ${url}    ${title}
+Navigate To Location
+    [Arguments]    ${url}
     Go To    ${url}
     Location Should Be    ${url}
-    Title Should Be    ${title}
-
-Navigate By Link And Verify Location
-    [Arguments]    ${link_text}    ${link_location}
-    Click Link    ${link_text}
-    Location Should Be    ${link_location}
 
 
