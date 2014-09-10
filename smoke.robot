@@ -1,6 +1,6 @@
 *** Settings ***
 Resource            resources/${ENVIRONMENT}.robot
-Resource            resources/smoke_resource.robot
+Resource            resources/smoke_resources.robot
 Suite Setup         Open Default Browser
 Test Setup          Navigate To Frontpage
 Suite Teardown      Close Browser
@@ -16,10 +16,6 @@ ${robot_blog_url}=    ${SERVER}/blogi/setting-up-a-ci-system/
 Blog about robotframework should exist
     Choose Blog    ${robot_blog_name}
     Verify Blog    ${robot_blog_name}    ${robot_blog_url}
-
-Helsinki link should be on frontpage and work
-    Click Link    Helsinki
-    Location Should Be    ${SERVER}/yhteystiedot/
 
 Changing language should change website language
     Verify English Locale
